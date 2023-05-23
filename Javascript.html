@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="javascript.js"></script>
+</head>
+<style>
+    #list
+    {
+        list-style-type: square;
+    }
+</style>
+<body onload="loaded()">
+    <h1 style="color:blueviolet">Here are the some basic HTML 5 elements</h1>
+    <p>Here is an unordered list</p>
+    <ul id="list">
+        <li>Sahdev Rajput</li>
+        <li>Sunny Kumar</li>
+        <li>Virendra Saw</li>
+    </ul>
+    <div>
+        <h1 style="color:blueviolet">Dynamic Counter</h1>
+        <button type="text" id="incrementbtn" onclick="increment()">+1</button>
+        <span id="dynamic">0</span>
+        <button type="text" id="decrementbtn" onclick="decrement()">-1</button>
+    </div>
+    <div>
+        <h1 style="color:blueviolet">Creating Dynamic Tables</h1>
+        <input type="text" placeholder="Enter the number of rows" id="value1">
+        <input type="text" placeholder="Enter the number of columns" id="value2">
+        <input type="button" value="Generate a table" id="ans" onclick="generate()">
+        <div id="here"></div>
+    </div>
+    <br>
+    <input type="button" value="Click here to change table colour" onclick="table()">
+    <div>
+        <h1 style="color:blueviolet">Changing the Color of text</h1>
+        <p id="demo">I am SAHDEV RAJPUT</p>
+        <input type="button" value="Click here to change text color" id="btn" onclick="colour()">
+        <br><br>
+        <input type="button" value="Click here to Change Button Color" id="btn2" onclick="col()">
+    </div>
+    <center>
+    <div>
+        <br>
+        <div id="box" style="height:100px;width: 100px; background-color: blue;"></div>
+        <input type="range" id="range" max="100" min="0" value="0" onchange="changed()"/>
+    </div>
+</center>
+<div>
+    <h1 style="color:blueviolet">Changing the Background Colour</h1>
+    <input type="button" onmouseover="bgcolour()" value="Change background colour">
+</div>
+
+    
+</body>
+</html>
